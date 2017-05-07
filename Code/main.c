@@ -20,7 +20,25 @@ void stack_print(Stack *stack)
 }
 
 
-Stack* quick_sort(Stack* stack)
+Stack* stack_concatenation(Stack* stack_first, Stack* stack_second)
+{
+
+
+    Stack *temp = stack_create(stack_size);
+    while (!stack_is_empty(stack_second)) {
+        stack_push(temp, stack_pop(stack_second));
+    }
+
+    while (!stack_is_empty(temp)) {
+        stack_push(stack_first, stack_pop(temp));
+    }
+
+
+    return stack_first;
+
+}
+
+Stack* stack_quick_sort(Stack* stack)
 {
     if (stack_is_empty(stack)) {
         return stack;
@@ -39,8 +57,8 @@ Stack* quick_sort(Stack* stack)
         }
     }
 
-    quick_sort(left);
-    quick_sort(right);
+    stack_quick_sort(left);
+    stack_quick_sort(right);
          
     Stack* temp = stack_create(stack_size);
     while(!stack_is_empty(right)) {
@@ -80,13 +98,9 @@ int main(void)
         stack_push(stack_2, element);
    }
 
-stack_print(stack_1); printf("\n");
-quick_sort(stack_1);  printf("\n");
-stack_print(stack_1);  printf("\n\n");
-stack_print(stack_2); printf("\n");
-quick_sort(stack_2);  printf("\n");
-stack_print(stack_2);  printf("\n\n");
-
+    stack_quick_sort(stack_1);
+    stack_quick_sort(stack_2); 
+    stack_print(stack_concatenation(stack_1, stack_2));
     return 0;
 }
 
