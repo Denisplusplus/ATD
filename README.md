@@ -1,2 +1,12 @@
-# ATD
-25-26 laboratory work in computer science | Second semester
+# ATD | Recursion | Makefile
+### The task №3:
+Procedure: stack concatenation
+Method: Hoare's quicksort
+### Algorithm:
+...
+### Description of solution the task:
+....
+##### Realize these functions:
+...
+### Testing:
+...
