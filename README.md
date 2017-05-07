@@ -1,6 +1,6 @@
 # ATD | Recursion | Makefile
 ### The task №3:
-Procedure: stack concatenation
+Procedure: stack concatenation </br>
 Method: Hoare's quicksort
 ### Algorithm:
 ...
