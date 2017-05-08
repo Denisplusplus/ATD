@@ -24,24 +24,24 @@ Algoritm includes following:
 * stack_sort(Stack* stack)
 * stack_concatenate(Stack* right, Stack* left, Item* pivot)
 ### Testing:
-I O 
-1 1 
-2 2
-3 3
----
-I O
-2 1
-1 2
-3 3
----
-I O
-1 1
----
-I O
-3 1 
-2 2
-1 3
----
+I O </br>
+1 1 </br>
+2 2 </br>
+3 3 </br>
+--- </br>
+I O </br>
+2 1 </br>
+1 2 </br>
+3 3 </br>
+--- </br>
+I O </br>
+1 1 </br>
+--- </br>
+I O </br>
+3 1 </br>
+2 2 </br>
+1 3 </br>
+--- </br>
 
 
 
