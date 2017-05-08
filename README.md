@@ -19,7 +19,7 @@ Algoritm includes following:
 * Then we do the previous steps for right and left sctacks
 * Concatenate right and left stack and the pivot in the one stack
 * Return this stack
-##### Realize these functions:
+##### Realize these functions to launch the qsort:
 * stack_print(Stack* stack)
 * stack_sort(Stack* stack)
 * stack_concatenate(Stack* right, Stack* left, Item* pivot)
@@ -41,6 +41,19 @@ I | O </br>
 2 | 2 </br>
 1 | 3 </br>
 ----- </br>
+### How to use:
+* Download this folder to your PC
+* Type 'make' to compile
+* Launch by typing ./start
+* Type 'help' to gain the information about the keys to control the app 
+
+Here is the keys description:
+* 'add' - to insert the value in the stack
+* 'print' - to print the stack 
+* 'destroy' - to delete the stack 
+* 'sort' - to start sorting the stack with Hoare's quick sort algorithm
+* 'exit' or 'quit' - to quit the application
+
 
 
 
